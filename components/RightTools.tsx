@@ -6,7 +6,7 @@ import type { Blog, Authors } from 'contentlayer/generated'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopButton from '@/components/ScrollTopButton'
 import { Github } from '@/components/social-icons/icons'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import CommentButton from './CommentButton'
 import { ArrowLeft } from 'lucide-react'
 
@@ -19,16 +19,22 @@ interface Props {
 
 export default function RightTools({ authorDetails, content }: Props) {
   const [show, setShow] = useState(false)
+  const tickingRef = useRef(false)
   const { filePath, path } = content
   const basePath = path.split('/')[0]
 
   useEffect(() => {
     const handleWindowScroll = () => {
-      if (window.scrollY > 50) setShow(true)
-      else setShow(false)
+      if (!tickingRef.current) {
+        requestAnimationFrame(() => {
+          setShow(window.scrollY > 50)
+          tickingRef.current = false
+        })
+        tickingRef.current = true
+      }
     }
 
-    window.addEventListener('scroll', handleWindowScroll)
+    window.addEventListener('scroll', handleWindowScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleWindowScroll)
   }, [])
 

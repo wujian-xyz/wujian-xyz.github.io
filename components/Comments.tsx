@@ -16,25 +16,16 @@ const id = 'inject-comments'
 const DARK_THEME_NAME = 'noborder_dark'
 const LIGHT_THEME_NAME = 'noborder_light'
 
-// 获取 localStorage 中 theme 的值
-function getSavedTheme() {
-  return window.localStorage.getItem('theme') || ''
-}
-
-// 获取系统主题
-function getSystemTheme() {
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-}
-
 export default function Comments({ slug }: { slug: string }) {
   const [mounted, setMounted] = useState(false)
   const [theme, setTheme] = useState(LIGHT_THEME_NAME)
 
   useEffect(() => {
     setMounted(true)
-    const _theme = getSavedTheme() || getSystemTheme()
+    const savedTheme = window.localStorage.getItem('theme') || ''
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    const _theme = savedTheme || systemTheme
     setTheme(_theme === 'dark' ? DARK_THEME_NAME : LIGHT_THEME_NAME)
-    // 监听主题变化
 
     const target = document.documentElement
     const observer = new MutationObserver((mutations) => {
