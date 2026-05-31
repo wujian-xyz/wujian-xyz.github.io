@@ -7,10 +7,12 @@ import { Github } from '@/components/social-icons/icons'
 import Image from 'next/image'
 import { Authors, allAuthors } from 'contentlayer/generated'
 import { coreContent } from 'pliny/utils/contentlayer'
+import type { Blog } from 'contentlayer/generated'
+import type { CoreContent } from 'pliny/utils/contentlayer'
 
 const MAX_DISPLAY = 5
 
-export default function Home({ posts }) {
+export default function Home({ posts }: { posts: CoreContent<Blog>[] }) {
   const author = allAuthors.find((p) => p.slug === 'default') as Authors
   const authorContent = coreContent(author)
 

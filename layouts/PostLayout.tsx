@@ -11,7 +11,7 @@ import siteMetadata from '@/data/siteMetadata'
 
 import { Github } from '@/components/social-icons/icons'
 
-const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
+const editUrl = (path: string) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   weekday: 'long',

@@ -2,7 +2,17 @@ import Image from './Image'
 import Link from './Link'
 import { Github } from './social-icons/icons'
 
-const Card = ({ title, description, imgSrc, href, display = 'block' }) => (
+import { ReactNode } from 'react'
+
+interface CardProps {
+  title: string
+  description: string
+  imgSrc?: string
+  href?: string
+  display?: string
+}
+
+const Card = ({ title, description, imgSrc, href, display = 'block' }: CardProps) => (
   <div className={`w-full p-4 md:w-1/2 ${display}`}>
     <div
       className={`${

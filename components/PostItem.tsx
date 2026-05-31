@@ -3,7 +3,14 @@ import { formatDate } from 'pliny/utils/formatDate'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 
-const PostItem = ({ path, date, title, tags }) => (
+interface PostItemProps {
+  path: string
+  date: string
+  title: string
+  tags: string[]
+}
+
+const PostItem = ({ path, date, title, tags }: PostItemProps) => (
   <article>
     <div className="space-y-2">
       <div className="space-y-3 xl:col-span-3">

@@ -1,15 +1,15 @@
 {
-  "psd": 1,
-  "psd-parser": 1,
-  "蓝湖": 1,
+  "gif-parser": 1,
   "parser": 2,
-  "设计图标注": 1,
-  "node": 2,
   "js": 2,
+  "图片数据流": 1,
+  "解码gif": 1,
   "nest-js": 1,
   "mysql": 1,
   "graphql": 1,
-  "gif-parser": 1,
-  "图片数据流": 1,
-  "解码gif": 1
+  "node": 2,
+  "psd": 1,
+  "psd-parser": 1,
+  "蓝湖": 1,
+  "设计图标注": 1
 }

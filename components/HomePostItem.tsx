@@ -2,7 +2,14 @@ import Link from './Link'
 import { formatDate } from 'pliny/utils/formatDate'
 import siteMetadata from '@/data/siteMetadata'
 
-const HomePostItem = ({ path, date, title, tags }) => (
+interface HomePostItemProps {
+  path: string
+  date: string
+  title: string
+  tags: string[]
+}
+
+const HomePostItem = ({ path, date, title, tags }: HomePostItemProps) => (
   <article>
     <div className="space-y-2">
       <div className="xl:col-span-3">
