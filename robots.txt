@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://wujian.xyz
+Sitemap: https://wujian.xyz/sitemap.xml

@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>匠心独运</title>
+      <link>https://wujian.xyz/blog</link>
+      <description>吴健个人工作经验、生活记录分享</description>
+      <language>zh-CN</language>
+      <managingEditor>1144397347@qq.com (N.see)</managingEditor>
+      <webMaster>1144397347@qq.com (N.see)</webMaster>
+      <lastBuildDate>Fri, 23 Dec 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://wujian.xyz/tags/psd/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://wujian.xyz/blog/psd-parser</guid>
+    <title>[psd-parser]如何实现自己的蓝湖（UI设计图标注）</title>
+    <link>https://wujian.xyz/blog/psd-parser</link>
+    <description>大家好，最近喜欢上文件流，对它很好奇，如psdjs解析.psd文件、xgplayerjs视频解码等，原理都类似。已完成gif解析原理：[gif-parser]带你如何用js读取gif图片数据流，解码gif历经一年多，再次挑战.psd文件解析，使用es6重构psd.js。</description>
+    <pubDate>Fri, 23 Dec 2022 00:00:00 GMT</pubDate>
+    <author>1144397347@qq.com (N.see)</author>
+    <category>psd</category><category>psd-parser</category><category>蓝湖</category><category>parser</category><category>设计图标注</category><category>node</category><category>js</category>
+  </item>
+
+    </channel>
+  </rss>

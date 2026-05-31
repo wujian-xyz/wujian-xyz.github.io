@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>匠心独运</title>
+      <link>https://wujian.xyz/blog</link>
+      <description>吴健个人工作经验、生活记录分享</description>
+      <language>zh-CN</language>
+      <managingEditor>1144397347@qq.com (N.see)</managingEditor>
+      <webMaster>1144397347@qq.com (N.see)</webMaster>
+      <lastBuildDate>Sun, 24 Jul 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://wujian.xyz/tags/nest-js/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://wujian.xyz/blog/nestjs-graphql-mysql</guid>
+    <title>Nestjs打通mysql与GraphQL链路、graphql 分页配置</title>
+    <link>https://wujian.xyz/blog/nestjs-graphql-mysql</link>
+    <description>Nestjs打通mysql与GraphQL链路、graphql 分页配置</description>
+    <pubDate>Sun, 24 Jul 2022 00:00:00 GMT</pubDate>
+    <author>1144397347@qq.com (N.see)</author>
+    <category>nest-js</category><category>mysql</category><category>GraphQL</category><category>node</category>
+  </item>
+
+    </channel>
+  </rss>

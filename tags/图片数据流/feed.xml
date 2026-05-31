@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>匠心独运</title>
+      <link>https://wujian.xyz/blog</link>
+      <description>吴健个人工作经验、生活记录分享</description>
+      <language>zh-CN</language>
+      <managingEditor>1144397347@qq.com (N.see)</managingEditor>
+      <webMaster>1144397347@qq.com (N.see)</webMaster>
+      <lastBuildDate>Sun, 24 Oct 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://wujian.xyz/tags/图片数据流/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://wujian.xyz/blog/gif-parser</guid>
+    <title>[gif-parser]带你如何用js读取gif图片数据流，解码gif</title>
+    <link>https://wujian.xyz/blog/gif-parser</link>
+    <description>大家好，最近喜欢上文件流，对它很好奇，如psdjs解析.psd文件、xgplayerjs视频解码等，原理都类似，只是这些太复杂，不好下手。最终找到我们今天的主角gif。</description>
+    <pubDate>Sun, 24 Oct 2021 00:00:00 GMT</pubDate>
+    <author>1144397347@qq.com (N.see)</author>
+    <category>gif-parser</category><category>parser</category><category>js</category><category>图片数据流</category><category>解码gif</category>
+  </item>
+
+    </channel>
+  </rss>
