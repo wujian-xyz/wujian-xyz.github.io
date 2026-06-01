@@ -27,7 +27,7 @@ const Header = () => {
             ) : (
               siteMetadata.headerTitle
             )}
-            <sup className="ml-1 text-gray-500">beta</sup>
+            {/* <sup className="ml-1 text-gray-500">beta</sup> */}
           </div>
         </Link>
         <div className="flex items-center space-x-4 leading-5 sm:-mr-6 sm:space-x-6">
